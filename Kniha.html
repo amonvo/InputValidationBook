@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <title>
+    AmonV
+  </title>
+</head>
+
+<body>
+  <fieldset>
+    <legend>Kniha</legend>
+<form action="http://vos.maple-webdesign.cz/wt1-cviceni-4.php" method="get">
+  Nazev knihy [nazev]*:
+  <input type="text" name="nazev" required>
+  <hr>
+  Autor knihy [autor]:
+  <input type="text" name="autor" placeholder="Jmeno, prijmeni, tituly">
+  <hr>
+  Popis knihy [popis]:
+  <textarea name="popis">
+  </textarea>
+  <hr>
+  Pocet stran [stran]* :
+  <input type="number" name="stran" required>
+  <hr>
+  <!-- NEFUNGUJE -->
+  Zanr [zanr]:
+  <select name="zanr[]" size="5" multiple>
+    <option value="Beleterie">Beleterie</option>
+    <option value="cestopis">Cestopis</option>
+    <option value="scifi">Scifi</option>
+    <option value="fantasy">Fantasy</option>
+    <option value="detektivka">Detektivka</option>
+  </select>
+  <hr>
+  Vazba [vazba]:<br>
+  <input type="radio" name="vazba" value="Vazana">Vazana<br>
+    <input type="radio" name="vazba" value="Brozovana" checked>Brozovana<br>
+  <hr>
+  Dalsi udaje:<br>
+  <input type="checkbox" name="vyprodana" value="vyprodana">Kniha je vyprodana [vyprodana]<br>
+  <input type="checkbox" name="cizojazycna" value="cizojazycna">Kniha je dostupna pouze v cizim jazyce [cizojazycna]<br>
+  <input type="checkbox" name="prectena" value="prectena" checked>Knihu jsem cetl [prectena]<br>
+
+  <hr>
+  <input type="submit" value="Odeslat">
+</form>
+</fieldset>
+</body>
+</html>
